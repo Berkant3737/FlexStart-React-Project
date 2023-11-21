@@ -1,0 +1,208 @@
+header {
+    padding: 20px 0;
+
+    &.header-scrolled {
+        background: #fff;
+        padding: 15px 0;
+        box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+        background: #fff;
+        padding: 15px 0;
+        box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    }
+}
+
+.navbar {
+    @media (max-width: 768px) {
+        .navbar-toggler {
+            padding: 0;
+            border: 0;
+
+            .navbar-icon {
+                color: #012970;
+                font-size: 28px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #013289;
+        white-space: nowrap;
+        transition: 0.3s;
+    }
+
+    .navbar-brand {
+        line-height: 0;
+
+        img {
+            max-height: 40px;
+            margin-right: 6px;
+        }
+
+        .logo {
+            width: 5rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+        }
+
+        span {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #012970;
+            font-family: "Nunito", sans-serif;
+            margin-top: 3px;
+        }
+    }
+
+
+    .navbar-nav {
+        li {
+            position: relative;
+        }
+
+        .nav-item {
+            &:not(:last-child) {
+                a {
+                    padding: 10px 0 10px 30px;
+                }
+            }
+
+            .nav-link {
+                color: #013289;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0 10px 30px;
+                font-family: "Nunito", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                white-space: nowrap;
+                transition: 0.3s;
+                position: relative;
+
+                &:hover {
+                    color: blue;
+                }
+
+                &>.active {
+                    color: #4154f1;
+                }
+            }
+        }
+
+        .dropdown-men {
+            &:hover {
+                &>ul {
+                    opacity: 1;
+                    top: 100%;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .megamenu {
+            position: static;
+
+            ul {
+                width: auto;
+                height: 140px;
+                padding: 10px;
+                left: 35%;
+                display: flex;
+            }
+        }
+
+        i {
+            font-size: 12px;
+            line-height: 0;
+            margin-left: 5px;
+        }
+    }
+
+    .btn-get-started {
+        height: 40px;
+        color: #fff;
+        background: #4154f1;
+        padding: 8px 20px;
+        border-radius: 4px;
+        margin-left: 30px;
+
+        &:hover {
+            color: #fff;
+            background: #5969f3;
+        }
+    }
+
+    .get-started {
+        color: white;
+    }
+}
+
+.dropdown-men {
+    ul {
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+        border-radius: 4px;
+
+        li {
+            width: 200px;
+            height: 43px;
+            list-style-type: none;
+
+            a {
+                padding: 10px 20px;
+                font-size: 15px;
+                text-transform: none;
+                font-weight: 600;
+                text-decoration: none;
+                padding: 10px 20px;
+            }
+        }
+    }
+}
+
+.navbar .megamenu ul li a:hover,
+.navbar .megamenu ul li .active,
+.navbar .megamenu ul li .active:hover {
+    color: #4154f1;
+}
+
+.megamenu {
+    ul {
+        li {
+            a {
+                padding: 10px 20px;
+                font-size: 15px;
+                text-transform: none;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    &:focus {
+        border: 0;
+    }
+}

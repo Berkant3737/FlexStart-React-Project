@@ -1,0 +1,9 @@
+@import "./abstracts/variables";
+@import "./base/global";
+@import "./layouts/navbar";
+@import "./layouts/footer";
+@import "./layouts/pages";
+@media (max-width: 768px) {
+    /* @import "./layouts/pages-mobile";
+    @import "./layouts/navbar-mobile"; */
+}
